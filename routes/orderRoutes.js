@@ -3,11 +3,11 @@ const router = express.Router();
 const {authenticateUser, authorizePermissions} = require('../middleware/authentication');
 
 const {
-	etAllOrders,
+	getAllOrders,
 	getSingleOrder,
 	getCurrentUserOrders,
 	createOrder,
-	updateOrder, getAllOrders,
+	updateOrder,
 } = require('../controllers/orderController');
 
 router
